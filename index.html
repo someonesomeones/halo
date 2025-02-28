@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stles1.css">
+    <title>A Celestial Beauty on Earth</title>
+</head>
+<body>
+    <header>
+        <h1>🌟 A Celestial Beauty on Earth 🌍</h1>
+    </header>
+    <main>
+        <p>"Like a celestial light gracing the earth, her beauty radiates warmth and serenity. Not just in her appearance, but in the kindness she bestows upon everyone she meets. Her heart, as pure as the morning dew, reflects a soul that brings peace, love, and joy to those around her. Every smile she shares is a melody of happiness, every act of kindness a whisper of heaven's grace. She is not just beautiful—she is a masterpiece of love, a divine presence walking among us, making the world a little brighter with every step she takes."</p>
+
+        <div class="image-gallery">
+            <img class="hover-image" src="https://media.discordapp.net/attachments/1339209307878850660/1345149473164365865/IMG-20250301-WA0007.jpg?ex=67c37f92&is=67c22e12&hm=8e93388b547a3255c7b3316f7e61a80b966f28e09a49ceea5c7b9e5b86f7666e&=&format=webp&width=516&height=683" alt="Image 1">
+            <img class="hover-image" src="https://media.discordapp.net/attachments/1339209307878850660/1345149473482997843/IMG-20250301-WA0006.jpg?ex=67c37f92&is=67c22e12&hm=b861283f228bfeee1128d779f50690a96c7e013ed1791550192b2a8158a8c57a&=&format=webp&width=513&height=684" alt="Image 2">
+            <img class="hover-image" src="https://media.discordapp.net/attachments/1339209307878850660/1345149473889718302/IMG-20250301-WA0005.jpg?ex=67c37f92&is=67c22e12&hm=a425624b54b076b7bfdabe3f7432063424d440ada0317ed08986f0df6054cbcd&=&format=webp&width=513&height=684" alt="Image 3">
+            <img class="hover-image" src="https://media.discordapp.net/attachments/1339209307878850660/1345149474187640954/IMG-20250301-WA0004.jpg?ex=67c37f92&is=67c22e12&hm=07c83d6b4b2fc2177955439965d7f90dbadaae35712fdd97fef4a1038967327e&=&format=webp&width=512&height=684" alt="Image 4">
+            <img class="animated-image" src="https://media.discordapp.net/attachments/1339209307878850660/1345151724989583430/animasi-bergerak-malaikat-bidadari-0010.gif?ex=67c381aa&is=67c2302a&hm=7132e41da9ecc33b80b5b4529cb365c40c11ae6143cac4d1b892934570e5bfc8&=" alt="Top Left Design">
+        </div>
+    </main>
+    <footer>
+        <p id="current-date" style="text-align: center;"></p>
+        <p style="text-align: center;">🌹 "Like the stars in the night sky, our love will shine forever."</p>
+    </footer>
+    <script>
+        const startDate = new Date("1945-08-17");
+        const currentDate = new Date();
+        const timeDifference = currentDate - startDate;
+        const dayDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        document.getElementById('current-date').innerText = dayDifference + " DAYS ! :)";
+    </script>
+</body>
+</html>

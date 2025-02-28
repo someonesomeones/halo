@@ -1,0 +1,84 @@
+body {
+    background: linear-gradient(to right, purple, black); /* Gradient background */
+    color: white; /* Text color */
+    font-family: Arial, sans-serif; /* Font family */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Padding for body */
+}
+
+main p {
+    max-width: 800px; /* Maximum width for paragraphs */
+    margin: 0 auto; /* Center align */
+    text-align: center; /* Center text */
+    line-height: 1.6; /* Line height for readability */
+    padding: 20px; /* Padding for better readability */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center items */
+}
+
+.image-gallery img {
+    width: 300px; /* Uniform width for images */
+    height: 300px; /* Uniform height for images */
+    object-fit: cover; /* Cover the area without distortion */
+    margin: 10px; /* Space between images */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.hover-image {
+    position: relative; /* Position for pseudo-element */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    border: 5px solid transparent; /* Default border */
+}
+
+.hover-image:hover::after {
+    content: ''; /* Pseudo-element for hover effect */
+    position: absolute; /* Positioning */
+    top: -10px; /* Adjust for effect */
+    left: -10px; /* Adjust for effect */
+    right: -10px; /* Adjust for effect */
+    bottom: -10px; /* Adjust for effect */
+    border: 5px solid transparent; /* Default border */
+    border-radius: 50%; /* Circular shape */
+    background: url('path_to_heart_image.png') no-repeat center; /* Heart image */
+    background-size: cover; /* Cover the area */
+    z-index: -1; /* Behind the image */
+}
+
+.hover-image:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+    border-color: gold; /* Change border color */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Shadow effect */
+}
+
+.animated-image {
+    animation: grow 2s infinite alternate;
+    width: 10px; /* Uniform width for images */
+    height: 10px; /* Uniform height for images */
+    object-fit: contain; /* Ensure the image is fully visible */
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.hover-image {
+    transition: transform 0.3s ease;
+}
+
+.hover-image:hover {
+    transform: scale(1.1);
+}
